@@ -222,33 +222,44 @@
                     Have a question or want to connect? Send an incantation my way!
                 </p>
 
-                <form onsubmit="event.preventDefault(); alert('Message sent through the ether! (Form demo)');" class="space-y-4 text-left max-w-lg mx-auto">
-                    <div>
-                        <label class="block text-xs font-semibold uppercase tracking-wider text-purple-300 mb-1">Your Name</label>
-                        <input type="text" placeholder="e.g. Morgana Le Fay" required class="w-full px-4 py-2.5 rounded-lg bg-[#0a0a0f] border border-purple-900/50 text-white placeholder-slate-600 focus:outline-none focus:border-teal-400 text-sm">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-semibold uppercase tracking-wider text-purple-300 mb-1">Your Email</label>
-                        <input type="email" placeholder="sorceress@realm.com" required class="w-full px-4 py-2.5 rounded-lg bg-[#0a0a0f] border border-purple-900/50 text-white placeholder-slate-600 focus:outline-none focus:border-teal-400 text-sm">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-semibold uppercase tracking-wider text-purple-300 mb-1">Incantation / Message</label>
-                        <textarea rows="4" placeholder="Write your message here..." required class="w-full px-4 py-2.5 rounded-lg bg-[#0a0a0f] border border-purple-900/50 text-white placeholder-slate-600 focus:outline-none focus:border-teal-400 text-sm resize-none"></textarea>
-                    </div>
-                    <button type="submit" class="w-full py-3 rounded-lg bg-gradient-to-r from-teal-500 to-purple-600 text-white font-semibold hover:from-teal-400 hover:to-purple-500 transition-all text-sm tracking-wide">
-                        Send Incantation <i class="fa-solid fa-paper-plane ml-1.5 text-xs"></i>
-                    </button>
-                </form>
-
-                <!-- Social Links -->
-                <div class="mt-8 pt-6 border-t border-purple-900/40 flex justify-center gap-6 text-xl">
-                    <a href="https://github.com" target="_blank" class="text-slate-400 hover:text-teal-400 transition-colors" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://linkedin.com" target="_blank" class="text-slate-400 hover:text-purple-400 transition-colors" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="mailto:sierra@example.com" class="text-slate-400 hover:text-teal-400 transition-colors" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
-                </div>
-            </div>
-        </section>
-    </main>
+               <form action="https://formspree.io/f/xbggwpek" method="POST" class="space-y-4 text-left max-w-lg mx-auto">
+  <div>
+    <label for="user-name" class="block text-xs font-semibold uppercase tracking-wider text-purple-300 mb-1">Your Name</label>
+    <input 
+      id="user-name"
+      type="text" 
+      name="name" 
+      placeholder="e.g. Morgana Le Fay" 
+      required 
+      class="w-full px-4 py-2.5 rounded-lg bg-[#0a0a0f] border border-purple-900/50 text-white placeholder-slate-600 focus:outline-none focus:border-teal-400 text-sm"
+    >
+  </div>
+  <div>
+    <label for="user-email" class="block text-xs font-semibold uppercase tracking-wider text-purple-300 mb-1">Your Email</label>
+    <input 
+      id="user-email"
+      type="email" 
+      name="_replyto" 
+      placeholder="sorceress@realm.com" 
+      required 
+      class="w-full px-4 py-2.5 rounded-lg bg-[#0a0a0f] border border-purple-900/50 text-white placeholder-slate-600 focus:outline-none focus:border-teal-400 text-sm"
+    >
+  </div>
+  <div>
+    <label for="user-message" class="block text-xs font-semibold uppercase tracking-wider text-purple-300 mb-1">Incantation / Message</label>
+    <textarea 
+      id="user-message"
+      name="message" 
+      rows="4" 
+      placeholder="Write your message here..." 
+      required 
+      class="w-full px-4 py-2.5 rounded-lg bg-[#0a0a0f] border border-purple-900/50 text-white placeholder-slate-600 focus:outline-none focus:border-teal-400 text-sm resize-none"
+    ></textarea>
+  </div>
+  <button type="submit" class="w-full py-3 rounded-lg bg-gradient-to-r from-teal-500 to-purple-600 text-white font-semibold hover:from-teal-400 hover:to-purple-500 transition-all text-sm tracking-wide">
+    Send Incantation <i class="fa-solid fa-paper-plane ml-1.5 text-xs"></i>
+  </button>
+</form>
 
     <!-- Footer -->
     <footer class="border-t border-purple-900/30 py-6 text-center text-xs text-slate-500">
